@@ -1,2 +1,1 @@
-# david-ilchmann.de
-Personal website
+https://marlon-lueckert.de/

@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25%;
+    padding-right: 25%;
+    background-color: rgb(17, 17, 17);
+}
+
+.left, .right {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.left p.welcome-label {
+    font-size: 80px;
+    color: white;
+    font-weight: 700;
+}
+
+.left p.profession {
+    font-size: 25px;
+    color: rgb(180, 180, 180);
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.header-btn {
+    background-color: rgb(71, 71, 255);
+    color: white;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-right: 20px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.profilepicture {
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+.icons {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: rgb(100, 100, 100) 3px solid;
+    border-bottom: rgb(100, 100, 100) 3px solid;
+    background-color: rgb(17, 17, 17);
+}
+
+.icon {
+    width: 60px;
+    height: 60px;
+}
+
+.icon-btn {
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.icon-btn:hover {
+    margin-top: -10px;
+}
