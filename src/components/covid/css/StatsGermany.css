@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper-stats {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+}
+
+.stat {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.stat:hover {
+    box-shadow: 0 0 10px rgb(180, 180, 180);
+}
+
+.stat-title {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.states-left {
+    color: white;
+}

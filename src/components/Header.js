@@ -3,6 +3,8 @@ import "./css/header.css"
 import logoImg from './img/profilepicture.jpg';
 import linkedinImg from './img/linkedin.svg';
 import githubImg from './img/github-logo.png';
+import lebenslauf from './documents/Lebenslauf.pdf';
+import { Link } from 'react-router-dom';
 
 class Header extends React.Component {
     render() {
@@ -10,11 +12,11 @@ class Header extends React.Component {
             <div className="content">
                 <div className="header">
                     <div className="left">
-                        <p className="welcome-label">Hey!<br/>I'm David.</p>
+                        <p className="welcome-label">Hey!<br/>I'm <span className="david-animation">David</span>.</p>
                         <p className="profession">Hobby Software Developer</p>
                         <div className="buttons">
-                            <a href="mailto:david.ilchmann@gmail.com" className="header-btn">Contact me</a>
-                            <a href="#projects" className="header-btn">Projects</a>
+                            <a href={lebenslauf} className="header-btn">Resume</a>
+                            <Link to="/projects" className="header-btn">Projects</Link>
                         </div>
                     </div>
                     <div className="right">
@@ -22,10 +24,10 @@ class Header extends React.Component {
                     </div>
                 </div>
                 <div className="icons">
-                    <a href="https://github.com/therealdavidilchmann" className="icon-btn">
+                    <a href="https://github.com/therealdavidilchmann" target="_blank" rel="noreferrer" className="icon-btn">
                         <img src={githubImg} alt="GitHub" className="icon"/>
                     </a>
-                    <a href="https://www.linkedin.com/in/david-ilchmann-9b2310186/" className="icon-btn">
+                    <a href="https://www.linkedin.com/in/david-ilchmann-9b2310186/" target="_blank" rel="noreferrer" className="icon-btn">
                         <img src={linkedinImg} alt="LinkedIn" className="icon"/>
                     </a>
                 </div>
