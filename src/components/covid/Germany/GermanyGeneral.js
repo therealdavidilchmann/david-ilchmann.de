@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import './css/StatsGermany.css';
+import '../css/General.css';
+
 
 class StatsGermany extends React.Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class StatsGermany extends React.Component {
 
     fetchData = async () => {
         try {
-            let res = await axios.get("https://rki.marlon-lueckert.de/api/general");
+            let res = await axios.get("https://api.corona-zahlen.org/germany");
             this.setState({
                 stats: res.data,
                 isLoaded: true
@@ -30,12 +31,22 @@ class StatsGermany extends React.Component {
     render() {
         if (this.state.isLoaded) {
             const data = this.state.stats;
+            const dateObj = new Date();
+            const month = dateObj.getMonth();
+            const day = String(dateObj.getDate()).padStart(2, '0');
+            const year = dateObj.getFullYear();
             return (
-                <div className="wrapper-stats">
-                    <Stat title="Cases" value={data.cases} />
-                    <Stat title="Deaths" value={data.deaths} />
-                    <Stat title="Recovered" value={data.recovered} />
-                    <Stat title="Week incidence" value={parseInt(data.weekIncidence)} />
+                <div className="stats-content">
+                    <p style={{color:"white", textAlign:"center"}}>Last Update: {day + "." + month+1 + "." + year}</p>
+                    <div className="wrapper-stats">
+                        <Stat title="Cases" value={data.cases} />
+                        <Stat title="Deaths" value={data.deaths} />
+                        <Stat title="Recovered" value={data.recovered} />
+                        <Stat title="Week incidence" value={parseInt(data.weekIncidence)} />
+                    </div>
+                    <div className="img-wrap">
+                        <img src="https://api.corona-zahlen.org/map/states" alt="" />
+                    </div>
                 </div>
             )
         } else {

@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import './css/GraphStates.css';
+import '../css/Graph.css';
 
 class Graph extends React.Component {
     constructor(props) {

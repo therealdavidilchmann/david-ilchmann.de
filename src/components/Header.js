@@ -15,7 +15,7 @@ class Header extends React.Component {
                         <p className="welcome-label">Hey!<br/>I'm <span className="david-animation">David</span>.</p>
                         <p className="profession">Hobby Software Developer</p>
                         <div className="buttons">
-                            <a href={lebenslauf} className="header-btn">Resume</a>
+                            <a href={lebenslauf} className="header-btn">CV</a>
                             <Link to="/projects" className="header-btn">Projects</Link>
                         </div>
                     </div>

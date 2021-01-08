@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
-import './css/GraphStates.css';
-import { converter, allStates } from './helper/stateNameConverter'
+import '../css/Graph.css';
+import { converter, allStates } from '../helper/stateNameConverter'
 
 class Select extends React.Component {
     constructor(props) {
@@ -104,9 +104,6 @@ class Graph extends React.Component {
                             )
                         })}
                     </div>
-                    <div className="placeholder"></div>
-                    <p className="districts-footer-label">Angaben entsprechen den Todesfällen des entsprechenden Bundeslandes pro Woche (Wocheninzidenz).</p>
-                    <p className="districts-footer-label">Quelle: <a href="https://github.com/marlon360/rki-covid-api">https://github.com/marlon360/rki-covid-api</a></p>
                     <div className="placeholder"></div>
                 </div>
             )

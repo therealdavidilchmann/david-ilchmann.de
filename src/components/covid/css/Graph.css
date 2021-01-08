@@ -95,3 +95,29 @@
 .districts-footer-label {
     color: white;
 }
+
+.graph-queries {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.graph-queries-label {
+    width: 300px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.graph-queries input {
+    width: 300px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.graph-queries div {
+    display: flex;
+    flex-direction: column;
+}
+
